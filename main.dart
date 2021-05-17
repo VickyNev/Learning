@@ -2,30 +2,39 @@ import "dart:math";
 import "dart:io";
 
 class Book {
+
+  Book(String aTitle, String aAuther, int aNumPages){
+  this.title = aTitle;
+  this.author = aAuther;
+  this.numPages = aNumPages;
+
+    
+  }
+
+
   String title;
   String author;
   int numPages;
 }
 
-  /*Book(){
-    print ("love to read");
-  }*/
-
 
 void main() {
 	
-  Book hp = Book();
-  hp.title = "Harry Potter: Sorcerers Stone";
-  hp.author = "JK Rowling";
-  hp.numPages = 300;
+  Book hp = Book("Harry Potter: Sorcerers Stone", "JK Rowling", 300);
+  
+  Book lotr = Book("Lord of the Rings","Tolkien", 500);
+
+  Book tls = Book("TwiLigh Saga","Stephenie Meyer", 600);
 
   print (hp.title);
-
-  Book lotr = Book();
-  lotr.title = "Lord of the Rings";
-  lotr.author = "Tolkien";
-  lotr.numPages = 500;
+  print (hp.author);
+  print (hp.numPages);
 
   print (lotr.author);
+
+  print (tls.title);
+
+
+
 
 }
