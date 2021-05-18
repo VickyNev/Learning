@@ -1,38 +1,24 @@
 import "dart:math";
 import "dart:io";
 
-class Book {
+class Student {
+  String name;
+  double gpa;
 
-  Book(String aTitle, String aAuther, int aNumPages){
-  this.title = aTitle;
-  this.author = aAuther;
-  this.numPages = aNumPages;
-
-    
+  Student (String aName, double aGpa){
+  this.name = aName;
+  this.gpa = aGpa;
   }
-
-
-  String title;
-  String author;
-  int numPages;
 }
 
 
 void main() {
 	
-  Book hp = Book("Harry Potter: Sorcerers Stone", "JK Rowling", 300);
-  
-  Book lotr = Book("Lord of the Rings","Tolkien", 500);
+  Student vicky = Student("Vicky", 3.7);
+  Student dima = Student ("Dima", 4.0);
+  Student vika = Student ("Vika", 2.8);
 
-  Book tls = Book("TwiLigh Saga","Stephenie Meyer", 600);
-
-  print (hp.title);
-  print (hp.author);
-  print (hp.numPages);
-
-  print (lotr.author);
-
-  print (tls.title);
+  print(dima.gpa);
 
 
 
