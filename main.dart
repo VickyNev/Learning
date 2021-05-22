@@ -9,6 +9,10 @@ class Student {
   this.name = aName;
   this.gpa = aGpa;
   }
+
+ bool hasHonors(){
+  return this.gpa >= 3.0;
+ }
 }
 
 
@@ -18,7 +22,8 @@ void main() {
   Student dima = Student ("Dima", 4.0);
   Student vika = Student ("Vika", 2.8);
 
-  print(dima.gpa);
+  print(dima.hasHonors());
+  print(vika.hasHonors());
 
 
 
